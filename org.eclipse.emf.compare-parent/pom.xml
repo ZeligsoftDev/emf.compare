@@ -82,7 +82,7 @@
     <module>../packaging/org.eclipse.emf.compare-feature</module>
     <module>../plugins/org.eclipse.emf.compare</module>
     <module>../plugins/org.eclipse.emf.compare.tests</module>
-    <module>../plugins/org.eclipse.emf.compare.doc</module>
+    <!-- <module>../plugins/org.eclipse.emf.compare.doc</module> -->
     
     <module>../packaging/org.eclipse.emf.compare.ide.ui-feature</module>
     <module>../plugins/org.eclipse.emf.compare.edit</module>
@@ -91,7 +91,7 @@
     <module>../plugins/org.eclipse.emf.compare.ide.ui.e4</module>
     <module>../plugins/org.eclipse.emf.compare.ide.ui.tests</module>
     <module>../plugins/org.eclipse.emf.compare.ide.ui.tests.framework</module>
-    <module>../plugins/org.eclipse.emf.compare.ide.ui.tests.git</module>
+    <!-- <module>../plugins/org.eclipse.emf.compare.ide.ui.tests.git</module> -->
     <module>../plugins/org.eclipse.emf.compare.ide.ui.tests.git.framework</module>
     <module>../plugins/org.eclipse.emf.compare.ide.tests</module>
 
@@ -121,7 +121,7 @@
     <module>../plugins/org.eclipse.emf.compare.diagram.edit</module>
     <module>../plugins/org.eclipse.emf.compare.diagram.ide.ui</module>
     
-    <module>../packaging/org.eclipse.emf.compare.tests-feature</module>
+    <!-- <module>../packaging/org.eclipse.emf.compare.tests-feature</module> -->
   </modules>
 
   <build>

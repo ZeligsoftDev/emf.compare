@@ -18,12 +18,14 @@
    <feature id="org.eclipse.emf.compare.rcp.ui.source" version="0.0.0">
       <category name="compare"/>
    </feature>
+<!--
    <feature id="org.eclipse.emf.compare.tests" version="0.0.0">
       <category name="compare_testframework"/>
    </feature>
    <feature id="org.eclipse.emf.compare.tests.source" version="0.0.0">
       <category name="compare_testframework"/>
    </feature>
+-->
    <feature id="org.eclipse.emf.compare.uml2" version="0.0.0">
       <category name="compare_integration"/>
    </feature>
