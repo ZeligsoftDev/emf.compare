@@ -16,7 +16,6 @@ import com.google.common.collect.Sets;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
@@ -78,6 +77,7 @@ public class SynchronizedResourceSet extends ResourceSetImpl implements Disposab
 	 *            The listener to notify of proxy creations.
 	 */
 	public SynchronizedResourceSet(IProxyCreationListener proxyListener) {
+		LOGGER.debug("Creating custom SynchronizedResourceSet");
 		this.uriCache = new ConcurrentHashMap<URI, Resource>();
 		this.resources = new SynchronizedResourcesEList<Resource>();
 		this.namespaceURIs = Sets.newSetFromMap(new ConcurrentHashMap<URI, Boolean>());
@@ -215,7 +215,7 @@ public class SynchronizedResourceSet extends ResourceSetImpl implements Disposab
 		}
 
 		try (InputStream stream = getURIConverter().createInputStream(trimmed, null)) {
-			resource.load(stream, Collections.emptyMap());
+			resource.load(stream, getLoadOptions());
 		} catch (IOException e) {
 			handleDemandLoadException(resource, e);
 		}
